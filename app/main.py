@@ -42,10 +42,9 @@ class CarWashStation:
         if diff <= 0:
             return 0.0
         price = (
-            car.comfort_class *
-            diff *
-            self.average_rating /
-            self.distance_from_city_center
+            car.comfort_class
+            * diff * self.average_rating
+            / self.distance_from_city_center
         )
         return round(price, 1)
 
